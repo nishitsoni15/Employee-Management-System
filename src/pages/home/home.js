@@ -1,17 +1,20 @@
 import { React, useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import useApi from '../../hooks/useApi/useApi';
 
 const Home = () => {
-    const [users, setUsers] = useState([]);
+    const { data } = useApi("http://localhost:3002/users");
+
+    const [user, setUser] = useState([]);
 
     useEffect(() => {
         userLoad();
     }, [])
 
-    const userLoad = async () => {
-        const result = await axios.get("http://localhost:3002/users");
-        setUsers(result.data);
+    const userLoad = () => {
+        var result = JSON.stringify(data);
+        setUser(result.data);
     }
 
     const deleteProfile = async id => {
@@ -36,7 +39,7 @@ const Home = () => {
                         </thead>
                         <tbody>
                             {
-                                users.map((value, index) => (
+                                user?.map((value, index) => (
                                     <tr>
                                         <td scope='row'>{index + 1}</td>
                                         <td>{value.name}</td>

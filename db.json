@@ -1,56 +1,10 @@
 {
   "users": [
     {
-      "id": 3,
-      "name": "Clementine Bauch",
-      "username": "Samantha",
-      "email": "Nathan@yesenia.net",
-      "address": {
-        "street": "Douglas Extension",
-        "suite": "Suite 847",
-        "city": "McKenziehaven",
-        "zipcode": "59590-4157",
-        "geo": {
-          "lat": "-68.6102",
-          "lng": "-47.0653"
-        }
-      },
-      "phone": "1-463-123-4447",
-      "website": "ramiro.info",
-      "company": {
-        "name": "Romaguera-Jacobson",
-        "catchPhrase": "Face to face bifurcated interface",
-        "bs": "e-enable strategic applications"
-      }
-    },
-    {
-      "id": 4,
-      "name": "preeti",
-      "username": "Kariannesddfs",
-      "email": "Julianne.OConner@kory",
-      "address": {
-        "street": "Hoeger Mall",
-        "suite": "Apt. 692",
-        "city": "South Elvis",
-        "zipcode": "53919-4257",
-        "geo": {
-          "lat": "29.4572",
-          "lng": "-164.2990"
-        }
-      },
-      "phone": "493-170-9623 x156",
-      "website": "kale.biz",
-      "company": {
-        "name": "Robel-Corkery",
-        "catchPhrase": "Multi-tiered zero tolerance productivity",
-        "bs": "transition cutting-edge web services"
-      }
-    },
-    {
       "id": 5,
       "name": "Chelsey Dietrich",
       "username": "Kamren",
-      "email": "Lucio_Hettinger@annie.ca",
+      "email": "Lucio_Hettinger@annie.cA",
       "address": {
         "street": "Skiles Walks",
         "suite": "Suite 351",
@@ -197,6 +151,55 @@
       "email": "admin@admin.com",
       "phone": "89888989899898",
       "id": 12
+    },
+    {
+      "name": "kklllmk",
+      "username": "ns15",
+      "email": "soni.nishit@successive.tech",
+      "phone": "898989890909009",
+      "id": 24
+    },
+    {
+      "name": "nishit",
+      "username": "",
+      "email": "",
+      "phone": "",
+      "id": 25
+    },
+    {
+      "name": "nishit",
+      "username": "ns15",
+      "email": "soni.nishit@successive.tech",
+      "phone": "8989898989",
+      "id": 26
+    },
+    {
+      "name": "abhi",
+      "username": "ns15",
+      "email": "soni.nishit@success",
+      "phone": "898989998",
+      "id": 27
+    },
+    {
+      "name": "hello",
+      "username": "ns15",
+      "email": "soni.nishit@successive.tech",
+      "phone": "898989898996",
+      "id": 28
+    },
+    {
+      "name": "omg",
+      "username": "omg",
+      "email": "soni.nishit@successive.tech",
+      "phone": "90909090900",
+      "id": 29
+    },
+    {
+      "name": "nishit",
+      "username": "ns15",
+      "email": "soni.nishit@successive.tech",
+      "phone": "8989898989",
+      "id": 30
     }
   ]
 }
