@@ -4,22 +4,20 @@ import { Link } from 'react-router-dom';
 import useApi from '../../hooks/useApi/useApi';
 
 const Home = () => {
-    const { data } = useApi("http://localhost:3002/users");
-
-    const [user, setUser] = useState([]);
+    const { loading, data } = useApi('http://localhost:3002/users')
+    const [user, setUser] = useState(null);
 
     useEffect(() => {
-        userLoad();
+        deleteUpdate();
     }, [])
 
-    const userLoad = () => {
-        var result = JSON.stringify(data);
-        setUser(result.data);
+    const deleteUpdate = () => {
+        setUser(JSON.stringify(user));
     }
 
     const deleteProfile = async id => {
         await axios.delete(`http://localhost:3002/users/${id}`);
-        userLoad();
+        deleteUpdate();
     }
 
     return (
@@ -39,7 +37,7 @@ const Home = () => {
                         </thead>
                         <tbody>
                             {
-                                user?.map((value, index) => (
+                                data?.map((value, index) => (
                                     <tr>
                                         <td scope='row'>{index + 1}</td>
                                         <td>{value.name}</td>

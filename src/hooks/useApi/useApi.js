@@ -4,6 +4,10 @@ const useApi = (url) => {
     const [loading, setLoading] = useState(true)
     const [data, setData] = useState(null)
 
+    useEffect(() => {
+        fetchApi();
+    }, []);
+
     const fetchApi = () => {
         fetch(url) // 'https://jsonplaceholder.typicode.com/users'
             .then(response => {
@@ -15,10 +19,6 @@ const useApi = (url) => {
                 setData(json)
             })
     };
-
-    useEffect(() => {
-        fetchApi();
-    }, []);
 
     return { loading, data }
 };
